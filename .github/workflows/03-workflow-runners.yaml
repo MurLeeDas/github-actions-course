@@ -1,5 +1,5 @@
 name: 03 - Workflow Runners
-on: push
+on: workflow_dispatch
 
 jobs:
     ubuntu-echo:
@@ -8,18 +8,18 @@ jobs:
             - name: Show OS
               run: |
                 echo "This job is running on an Ubuntu runner."
-                echo "The runner os is ${{ runner.os }}"
+                echo "Runner OS: ${{ runner.os }}"
     windows-echo:
         runs-on: windows-latest
         steps:
             - name: Show OS
               run: |
                 echo "This job is running on a Windows runner."
-                echo "The runner os is ${{ runner.os }}"
+                echo "Runner OS: ${{ runner.os }}"
     macos-echo:
         runs-on: macos-latest
         steps:
             - name: Show OS
               run: |
                 echo "This job is running on a MacOS runner."
-                echo "The runner os is ${{ runner.os }}"
+                echo "Runner OS: ${{ runner.os }}"
