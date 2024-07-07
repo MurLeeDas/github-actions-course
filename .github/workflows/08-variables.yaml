@@ -5,7 +5,7 @@ env:
   OVERWRITTEN_VAR: "I will be overwritten"
 
 on:
-  push:
+  # push:
   workflow_dispatch:
 
 jobs:
